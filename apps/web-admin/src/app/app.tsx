@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import NxWelcome from './nx-welcome';
+import { User } from '@nx-rocks/types';
 
 const StyledApp = styled.div`
   // Your style here
