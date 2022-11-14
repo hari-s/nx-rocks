@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-rocks/types": ["libs/types/src/index.ts"],
+      "@nx-rocks/types-admin": ["libs/types-admin/src/index.ts"],
+      "@nx-rocks/types-api": ["libs/types-api/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

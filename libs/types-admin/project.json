@@ -1,0 +1,32 @@
+{
+  "root": "libs/types-admin",
+  "sourceRoot": "libs/types-admin/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/types-admin",
+        "main": "libs/types-admin/src/index.ts",
+        "tsConfig": "libs/types-admin/tsconfig.lib.json",
+        "assets": ["libs/types-admin/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/types-admin/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/types-admin"],
+      "options": {
+        "jestConfig": "libs/types-admin/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
