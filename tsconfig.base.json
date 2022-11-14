@@ -17,7 +17,16 @@
     "paths": {
       "@nx-rocks/types": ["libs/types/src/index.ts"],
       "@nx-rocks/types-admin": ["libs/types-admin/src/index.ts"],
-      "@nx-rocks/types-api": ["libs/types-api/src/index.ts"]
+      "@nx-rocks/types-api": ["libs/types-api/src/index.ts"],
+      "@nx-rocks/ui-components": ["libs/ui-components/src/index.ts"],
+      "@nx-rocks/ui-components-admin": [
+        "libs/ui-components-admin/src/index.ts"
+      ],
+      "@nx-rocks/ui-components-docs": ["libs/ui-components-docs/src/index.ts"],
+      "@nx-rocks/utils": ["libs/utils/src/index.ts"],
+      "@nx-rocks/utils-admin": ["libs/utils-admin/src/index.ts"],
+      "@nx-rocks/utils-api": ["libs/utils-api/src/index.ts"],
+      "@nx-rocks/utils-docs": ["libs/utils-docs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

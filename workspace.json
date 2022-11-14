@@ -1,10 +1,20 @@
 {
   "version": 2,
   "projects": {
+    "api": "apps/api",
     "types": "libs/types",
     "types-admin": "libs/types-admin",
     "types-api": "libs/types-api",
+    "ui-components": "libs/ui-components",
+    "ui-components-admin": "libs/ui-components-admin",
+    "ui-components-docs": "libs/ui-components-docs",
+    "utils": "libs/utils",
+    "utils-admin": "libs/utils-admin",
+    "utils-api": "libs/utils-api",
+    "utils-docs": "libs/utils-docs",
     "web-admin": "apps/web-admin",
-    "web-admin-e2e": "apps/web-admin-e2e"
+    "web-admin-e2e": "apps/web-admin-e2e",
+    "web-docs": "apps/web-docs",
+    "web-docs-e2e": "apps/web-docs-e2e"
   }
 }

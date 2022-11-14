@@ -1,0 +1,32 @@
+{
+  "root": "libs/utils-admin",
+  "sourceRoot": "libs/utils-admin/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/utils-admin",
+        "main": "libs/utils-admin/src/index.ts",
+        "tsConfig": "libs/utils-admin/tsconfig.lib.json",
+        "assets": ["libs/utils-admin/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/utils-admin/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/utils-admin"],
+      "options": {
+        "jestConfig": "libs/utils-admin/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

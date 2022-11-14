@@ -1,0 +1,32 @@
+{
+  "root": "libs/utils-docs",
+  "sourceRoot": "libs/utils-docs/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/utils-docs",
+        "main": "libs/utils-docs/src/index.ts",
+        "tsConfig": "libs/utils-docs/tsconfig.lib.json",
+        "assets": ["libs/utils-docs/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/utils-docs/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/utils-docs"],
+      "options": {
+        "jestConfig": "libs/utils-docs/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
